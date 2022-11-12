@@ -1,3 +1,14 @@
+var buttonTheme = document.querySelector("input[type=button]")
+buttonTheme.addEventListener('click', () => {
+
+    let body = document.querySelector("body")
+
+    if(body.className == "first-mode"){
+        body.className = "second-mode"    
+    }else if(body.className == "second-mode"){
+        body.className = "first-mode"
+    }
+})
 function insert(num){
     var numero = document.getElementById('res').innerHTML;
     document.getElementById('res').innerHTML = numero + num;

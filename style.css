@@ -3,15 +3,31 @@
     padding: 0px;
 }
 :root{
+    /*first mode*/
+    --first-color: ;
+    --second-color: ;
+    --third-color: ;
+    --fourth-color: ;
+}
+.first-mode{
+    --first-color:  #023535;
+    --second-color: #015958;
+    --third-color:  #008F8C;
+    --fourth-color: #0CABA8;
+}
+.second-mode{
     --first-color:  #042940;
-    --second-color: #DBF227;
+    --second-color: #005C53;
     --third-color:  #9FC131;
-    --fourth-color: #005C53;
+    --fourth-color: #DBF227;
     --fiveth-color: #8986EB;
+}
+.flex{
+    display: flex;
 }
 body{
     font-family: 'Roboto', sans-serif;
-    background-color: var(--fourth-color);
+    background-color: var(--second-color);
 }
 header{
     padding: 10px;
@@ -55,4 +71,18 @@ button{
 }
 button:hover{
     background-color: lightgray;
+}
+
+div.header-input{
+    justify-content: flex-end;
+}
+input[type=button]{
+    padding: 10px;
+    border: none;
+    border-radius: 15%;
+    background-image: url(/assets/flor.png);
+}
+input[type=button]:hover{
+    cursor: pointer;
+    opacity: 80%;
 }
