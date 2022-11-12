@@ -3,7 +3,6 @@ buttonTheme.addEventListener('click', () => {
 
     let body = document.querySelector("body")
 
-
     if(body.className == "first-mode"){
         body.className = "second-mode"
         buttonTheme.style.backgroundImage = "url('assets/onda.png')"
