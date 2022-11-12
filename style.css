@@ -80,12 +80,12 @@ div.header-input{
     justify-content: flex-end;
 }
 input[type=button]{
-    padding: 5px 20px;
+    padding: 8px 20px;
     border: none;
     border-radius: 15%;
 
     background: none;
-    background-image: url(assets/flor.png);   
+    background-image: url(assets/bg-green.png);   
     background-repeat: no-repeat;
     background-position-x: center;
 

@@ -5,10 +5,10 @@ buttonTheme.addEventListener('click', () => {
 
     if(body.className == "first-mode"){
         body.className = "second-mode"
-        buttonTheme.style.backgroundImage = "url('assets/onda.png')"
+        buttonTheme.style.backgroundImage = "url('assets/bg-blue.png')"
     }else if(body.className == "second-mode"){
         body.className = "first-mode"
-        buttonTheme.style.backgroundImage = "url('assets/flor.png')"
+        buttonTheme.style.backgroundImage = "url('assets/bg-green.png')"
     }
 })
 function insert(num){
