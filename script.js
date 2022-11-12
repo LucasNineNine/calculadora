@@ -1,12 +1,15 @@
-var buttonTheme = document.querySelector("input[type=button]")
+var buttonTheme = document.querySelector("input")
 buttonTheme.addEventListener('click', () => {
 
     let body = document.querySelector("body")
 
+
     if(body.className == "first-mode"){
-        body.className = "second-mode"    
+        body.className = "second-mode"
+        buttonTheme.style.backgroundImage = "url('assets/onda.png')"
     }else if(body.className == "second-mode"){
         body.className = "first-mode"
+        buttonTheme.style.backgroundImage = "url('assets/flor.png')"
     }
 })
 function insert(num){
