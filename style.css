@@ -85,7 +85,7 @@ input[type=button]{
     border-radius: 15%;
 
     background: none;
-    background-image: url(/assets/flor.png);   
+    background-image: url(assets/flor.png);   
     background-repeat: no-repeat;
     background-position-x: center;
 
