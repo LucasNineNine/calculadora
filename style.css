@@ -2,13 +2,12 @@
     margin: 0px;
     padding: 0px;
 }
-:root{
-    /*first mode*/
-    --first-color: ;
-    --second-color: ;
-    --third-color: ;
-    --fourth-color: ;
-}
+/* :root{
+    /* --first-color:  #023535;
+    --second-color: #015958;
+    --third-color:  #008F8C;
+    --fourth-color: #0CABA8; 
+} */
 .first-mode{
     --first-color:  #023535;
     --second-color: #015958;
@@ -16,17 +15,17 @@
     --fourth-color: #0CABA8;
 }
 .second-mode{
-    --first-color:  #1F7A48;
-    --second-color: #2BAE66;
-    --third-color:  #37f38c;
-    --fourth-color: #DBF227;
-    --fiveth-color: #8986EB;
+    --first-color:  #C39F3C;
+    --second-color: #563084;
+    --third-color:  #C33C3C;
+    --fourth-color: #C39F3C;
+    /* --fiveth-color: ; */
 }
 .flex{
     display: flex;
 }
-#transition-mode{
-    transition: 3s;
+.transition-mode{
+    transition: 2s;
 }
 body{
     font-family: 'Roboto', sans-serif;
@@ -38,13 +37,36 @@ header{
     text-align: center;
     background-color: var(--third-color);
 }
+div.header-input{
+    justify-content: flex-end;
+}
+input[type=button]{
+    padding: 8px 20px;
+    border: none;
+    border-radius: 15%;
+
+    background: none;
+    background-image: url(assets/bg-green.png);   
+    background-repeat: no-repeat;
+    background-position-x: center;
+
+    cursor: pointer;
+}
 main{
+    margin: auto;
+    max-width: 720px;
+    align-items: center;
+}
+div.container-calculator{
     border-radius: 10px;
-    padding: 30px;
+    padding: 40px;   
+    max-width: 270px;
+    height: 340px;
+    /*Caso queira usar essas propriedades, retire max-width e margin 
     transform: translate(-50%, -50%);
     left: 50%;
     top: 50%;
-    position: absolute;
+    position: absolute; */
     background-color: var(--first-color);
 }
 div#res{
@@ -53,11 +75,13 @@ div#res{
     border-radius: 3px;
     text-align: right;
     margin: 0px 0px 5px 0px;
-    padding: 20px;
+    height: 40px;
     background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 button.linha_dupla{
-    height: 100px;
+    height: 105px;
 }
 button.coluna_dupla{
     width: 104px;
@@ -75,19 +99,17 @@ button{
 button:hover{
     background-color: lightgray;
 }
-
-div.header-input{
-    justify-content: flex-end;
+button.historic{
+    background-image: url('assets/clock.svg');
 }
-input[type=button]{
-    padding: 8px 20px;
-    border: none;
-    border-radius: 15%;
 
-    background: none;
-    background-image: url(assets/bg-green.png);   
-    background-repeat: no-repeat;
-    background-position-x: center;
+div#list-of-historic{
+    border-radius: 5px;
+    margin: 30px;
+    padding: 5px;
+    width: 300px;
+    height: 340px;
+    background-color: var(--fourth-color);
 
-    cursor: pointer;
+    overflow: hidden;
 }
