@@ -2,6 +2,8 @@
 
 <figure>
     <img src=".github/calcu-roxo-mode.png">
+    <img src=".github/calcu-blue
+    -mode.png">
 </figure>
 
 ## Tecnologias
