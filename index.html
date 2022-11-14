@@ -7,47 +7,54 @@
     <link rel="stylesheet" href="style.css">
     <title>Calculadora</title>
 </head>
-<body class="first-mode" id="transition-mode">
-    <header id="transition-mode">
+<body class="first-mode transition-mode" id="">  
+    <header class="transition-mode" id="">
         <h1>Calculadora</h1>
         <div class="flex header-input">
             <input type="button" value="">
         </div>
     </header>
-    <main class="calculadora" id="transition-mode">
+    <main class="calculadora flex">
+        <div class="container-calculator transition-mode" id="">
             <div id="res"></div>
             <table>
                 <tr>
-                    <td><button onclick="limpar()">C</button></td>
-                    <td><button onclick="voltar()">&lt;</button></td>
+                    <td><button onclick="clean()">C</button></td>
+                    <td><button onclick="back()">&lt;</button></td>
                     <td><button onclick="insert('/')">/</button></td>
                     <td><button onclick="insert('*')">x</button></td>
+                    <td><button onclick="espereAtualizacao()">()</button></td>
                 </tr>
                 <tr>
                     <td><button onclick="insert('7')">7</button></td>
                     <td><button onclick="insert('8')">8</button></td>
                     <td><button onclick="insert('9')">9</button></td>
                     <td><button onclick="insert('-')">-</button></td>
+                    <td><button onclick="espereAtualizacao()">+/-</button></td>
                 </tr>
                 <tr>
                     <td><button onclick="insert('4')">4</button></td>
                     <td><button onclick="insert('5')">5</button></td>
                     <td><button onclick="insert('6')">6</button></td>
                     <td><button onclick="insert('+')">+</button></td>
+                    <td><button onclick="espereAtualizacao()">raiz</button></td>
                 </tr>
                 <tr>
                     <td><button onclick="insert('1')">1</button></td>
                     <td><button onclick="insert('2')">2</button></td>
                     <td><button onclick="insert('3')">3</button></td>
-                    <td rowspan="2"><button class="linha_dupla" onclick="calcular()">=</button></td>
+                    <td rowspan="2"><button class="linha_dupla" onclick="calculate()">=</button></td>
+                    <td><button onclick="espereAtualizacao()">pi</button></td>
                 </tr>
                 <tr>
                     <td colspan="2"><button class="coluna_dupla" onclick="insert('0')">0</button></td>
                     <td><button onclick="insert('.')">.</button></td>
+                    <td><button class="historic"></button></td>
                 </tr>
             </table>
+        </div>  
+        <div class="transition-mode" id="list-of-historic"></div>
     </main>
     <script src="./script.js"></script>
-        
 </body>
 </html>

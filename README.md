@@ -12,4 +12,4 @@
 
 ## Projeto
 
-<p>Esse projeto tem como objetivo fazer uma calculadora</p>
+<p>Esse projeto tem como objetivo fazer uma calculadora "</p>
