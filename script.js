@@ -1,5 +1,7 @@
 // Theme modify
 var buttonTheme = document.querySelector("input")
+buttonTheme.style.backgroundImage = "url('assets/button-mode-multi-color.png')"
+
 buttonTheme.addEventListener('click', () => { 
 
     let body = document.querySelector("body")
@@ -8,13 +10,13 @@ buttonTheme.addEventListener('click', () => {
         /*fundo azul - imagem verde */
         var bodyClass = body.className
         body.className = bodyClass.replace("first-mode", "second-mode ")
-        buttonTheme.style.backgroundImage = "url('assets/bg-blue.png')"
+        buttonTheme.style.backgroundImage = "url('assets/button-mode-dark-mode.png')"
 
     }else if(body.className.substring(0,11) == "second-mode"){
         /*fundo verde - imagem azul */
         var bodyClass = body.className
         body.className = bodyClass.replace("second-mode", "first-mode")
-        buttonTheme.style.backgroundImage = "url('assets/bg-green.png')"
+        buttonTheme.style.backgroundImage = "url('assets/button-mode-multi-color.png')"
     }
 })
 

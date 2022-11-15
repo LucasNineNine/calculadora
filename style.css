@@ -9,10 +9,18 @@
     --fourth-color: #0CABA8; 
 } */
 .first-mode{
-    --first-color:  #023535;
+    /* --first-color:  #023535;
     --second-color: #015958;
     --third-color:  #008F8C;
-    --fourth-color: #0CABA8;
+    --fourth-color: #0CABA8; */
+   
+
+    --first-color:  #202529 /*282834 1b1b2e94 260D36*/;
+    --second-color: #32383D /*111127 352F4C*/;
+    --third-color:  #4C555C /*624574*/;
+    --fourth-color: #A1B4C4;
+    
+   
 }
 .second-mode{
     --first-color:  #C39F3C;
@@ -46,7 +54,6 @@ input[type=button]{
     border-radius: 15%;
 
     background: none;
-    background-image: url(assets/bg-green.png);   
     background-repeat: no-repeat;
     background-position-x: center;
 
