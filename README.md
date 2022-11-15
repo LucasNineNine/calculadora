@@ -1,8 +1,8 @@
 <h1>Calculadora</h1>
 
 <figure>
-    <img src=".github/calcu-roxo-mode.png">
-    <img src=".github/calcu-azul-mode.png">
+    <img src=".github/calcu-dark-mode.png">
+    <img src=".github/calcu-multi-color.png">
 </figure>
 
 ## Tecnologias
